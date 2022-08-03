@@ -50,6 +50,13 @@ ul {
   padding-right: 15px;
 }
 
+.flex {
+  display: flex;
+  align-items: baseline;
+  margin: 0;
+  padding: 0;
+}
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -60,19 +67,9 @@ ul {
   text-align: center;
 }
 
-/* a {
-  text-decoration: none;
-  color: currentColor;
-
-
 img {
   display: block;
 }
-
-address {
-  line-height: 1.71;
-  font-style: normal;
-} */
 
 .section-title {
   font-weight: 700;
@@ -330,7 +327,7 @@ address {
   margin-right: 30px;
 }
 .team-workers {
-  padding: 30px 0px;
+  padding: 30px 32px;
 }
 .team-worker {
   font-weight: 500;
@@ -350,7 +347,6 @@ address {
 
 .team-social-list {
   display: flex;
-  padding: 0px 32px;
   margin-top: 16px;
   list-style: none;
   justify-content: space-between;
@@ -365,7 +361,9 @@ address {
 .team-social-link {
   width: 44px;
   height: 44px;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   color: #afb1b8;
   background-color: var(--main-backgroundcolor);
@@ -378,7 +376,6 @@ address {
 }
 
 .team-social-icon {
-  margin: 12px 0px 0px 12px;
   fill: currentColor;
 }
 
@@ -418,12 +415,13 @@ address {
 .client-link {
   width: 170px;
   height: 90px;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: #afb1b8;
   background-color: var(--main-backgroundcolor);
-  padding: 16px 32px;
 }
 
 .client-link:hover,
@@ -449,15 +447,7 @@ address {
   background-color: var(--accent-background);
 }
 
-.footer-flex {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 .footer-social-text {
-  padding: 20px 0px 10px 0px;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -488,7 +478,9 @@ address {
 .footer-social-link {
   width: 44px;
   height: 44px;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   color: var(--white-fontcolor);
   background-color: #ffffff10;
@@ -501,7 +493,6 @@ address {
 }
 
 .footer-social-icon {
-  margin: 12px 0px 0px 12px;
   fill: currentColor;
 }
 
@@ -578,8 +569,12 @@ a {
   margin: 15px;
 }
 
-.portfolio-item:hover,
-.portfolio-item:focus {
+.item-link {
+  display: block;
+}
+
+.item-link:hover,
+.item-link:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
